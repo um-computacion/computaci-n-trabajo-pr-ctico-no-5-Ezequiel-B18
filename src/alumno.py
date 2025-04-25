@@ -3,6 +3,8 @@ from src.persona import Persona
 class Alumno(Persona):
     def __init__(self, nombre, apellido, dni, legajo):
         super().__init__(nombre, apellido, dni)
+        if not legajo:
+            raise ValueError("El legajo no puede estar vacio.")
         self.legajo = legajo
 
     def __repr__(self):

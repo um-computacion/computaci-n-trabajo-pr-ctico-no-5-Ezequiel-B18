@@ -1,5 +1,7 @@
 class Persona:
     def __init__(self, nombre, apellido, dni):
+        if not dni or len(dni) < 8:
+            raise ValueError ("El DNI debe tener al menos 8 caracteres.")
         self.nombre = nombre
         self.apellido = apellido
         self.dni = dni
