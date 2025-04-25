@@ -22,3 +22,14 @@ class TestPersona(unittest.TestCase):
         persona = Persona("Juan","Perez" ,"12345678")
         persona.pensar("Hola mundo")
         self.assertEqual(persona.ultima_idea, "Hola mundo")
+
+    def test_valores_vacios(self):
+        persona = Persona("","", "12345678")
+        self.assertEqual(persona.nombre, "")
+        self.assertEqual(persona.apellido, "")
+
+    def validacion_dni(self):
+        with self.assertRaises(ValueError):
+            Persona("Juan", "Perez", "") #DNI vacio
+        with self.assertRaises(ValueError):
+            Persona("Juan", "Perez", "123") #DNI muy corto
