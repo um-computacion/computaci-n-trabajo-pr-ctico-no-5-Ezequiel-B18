@@ -12,4 +12,6 @@ class Persona:
     def pensar(self, idea):
         self.pensamientos += 1
         self.ultima_idea = idea
+
+
         

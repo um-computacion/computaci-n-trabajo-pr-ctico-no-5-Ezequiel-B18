@@ -22,4 +22,3 @@ class TestPersona(unittest.TestCase):
         persona = Persona("Juan","Perez" ,"12345678")
         persona.pensar("Hola mundo")
         self.assertEqual(persona.ultima_idea, "Hola mundo")
-
