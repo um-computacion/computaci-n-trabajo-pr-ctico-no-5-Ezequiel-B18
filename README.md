@@ -142,7 +142,7 @@ class Persona:
    ```
 
 2. **Verde**: Implementar en `src/profesor.py`:
-   ```python    
+   ```python
    from src.persona import Persona
 
    class Profesor(Persona):
