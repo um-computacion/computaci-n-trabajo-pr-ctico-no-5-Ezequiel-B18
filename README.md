@@ -1,9 +1,9 @@
 # Trabajo Práctico 5: Programación Orientada a Objetos con TDD
 
 ## Información del Estudiante
-- **Nombre**: [Escribir nombre]
-- **Apellido**: [Escribir apellido]
-- **Legajo**: [Escribir legajo]
+- **Nombre**: Ezequiel
+- **Apellido**: Blajevitch
+- **Legajo**: 64053
 
 ## Objetivos
 - Implementar una jerarquía de clases utilizando herencia
@@ -142,7 +142,7 @@ class Persona:
    ```
 
 2. **Verde**: Implementar en `src/profesor.py`:
-   ```python
+   ```python    
    from src.persona import Persona
 
    class Profesor(Persona):
